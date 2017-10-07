@@ -1,0 +1,21 @@
+{
+  "name": "udp-radio",
+  "version": "1.0.0",
+  "description": "UDP based broadcasting and receiving module, It expects an JS Object and returns the same on the otherside :P",
+  "main": "radio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UDP",
+    "Broadcast",
+    "UDP",
+    "Broadcast",
+    "Receive",
+    "Network",
+    "Broadcast",
+    "Broadcast"
+  ],
+  "author": "Soumesh Banerjee",
+  "license": "MIT"
+}
