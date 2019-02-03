@@ -17,9 +17,9 @@ const Radio = require('udp-radio');
 
 #### Async receiving any broadcast
 ```
-let radio = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
+let channel_0 = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
     // on receiving of a radio broadcast
-    console.log(message)
+    console.log(message);
 })
 ```
 
@@ -27,7 +27,8 @@ let radio = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
 ```
 const message = {
   _type: "LOGOUT",
-  _content: os.hostname()
+  _content: os.hostname();
 }
-radio.broadcast(message)
+channel_0.broadcast(message);
+channel_0.close();
 ```

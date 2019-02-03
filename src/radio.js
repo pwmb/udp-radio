@@ -62,4 +62,10 @@ Radio.prototype.broadcast = function(message){
   }
 }
 
+
+Radio.prototype.close = function(){
+  this.receiver.close();
+  this.sender.close();
+}
+
 module.exports = Radio;
