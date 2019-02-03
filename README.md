@@ -3,7 +3,7 @@ UDP based broadcasting and receiving module, It expects an JS Object and returns
 
 
 ## Instalation
-```
+```bash
 $ npm install upd-radio
 ```
 
@@ -11,12 +11,12 @@ $ npm install upd-radio
 ## Usages
 
 #### Requiring the package
-```
+```js
 const Radio = require('udp-radio');
 ```
 
 #### Async receiving any broadcast
-```
+```js
 let channel_0 = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
     // on receiving of a radio broadcast
     console.log(message);
@@ -24,7 +24,7 @@ let channel_0 = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
 ```
 
 #### Async send any broadcast
-```
+```js
 const message = {
   _type: "LOGOUT",
   _content: os.hostname();
