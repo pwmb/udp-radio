@@ -3,9 +3,8 @@
   "version": "1.1.0",
   "description": "UDP based broadcasting and receiving module, It expects an JS Object and returns the same on the otherside :P",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "radio.js",
+  "main": "src/radio.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SoumeshBanerjee/udp-radio.git"
@@ -26,6 +25,5 @@
     "Broadcast",
     "Broadcast"
   ],
-  "author": "Soumesh Banerjee",
   "license": "MIT"
 }
