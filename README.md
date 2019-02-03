@@ -17,6 +17,8 @@ const Radio = require('udp-radio');
 
 #### Async receiving any broadcast
 ```js
+const BROADCAST_ADDR = "127.0.0.1";
+const BROADCAST_PORT = 9999
 let channel_0 = new Radio(BROADCAST_ADDR, BROADCAST_PORT, (message, info)=>{
     // on receiving of a radio broadcast
     console.log(message);
